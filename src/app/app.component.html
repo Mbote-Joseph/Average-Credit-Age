@@ -1,10 +1,19 @@
+<style>
+  .container1{
+    text-align: center;
+    margin: 20%;
+    position: relative;
+}
 
+
+  } }
+</style>
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="icon" type="image/x-icon" href="favicon.ico">
  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-<div class="container">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <div class="container-fluid">
 
   <div>
     <h1>Average Credit Age</h1>
@@ -12,34 +21,28 @@
       <div class="form-group">
         <label for="name">Average Credit Age</label>
         <input type="text" class="form-control" id="name">
-        
+        <br>
 
-        <div class="form-group">
-          <label for="CardType">Card Type</label>
-          <select class="form-control" id="CardType">
-            <option *ngfor="let ct of CardType" [value]="ct">{{ct}}</option>
-          </select>
-        </div>
-
+<br>
         <div class="form-group">
           <label for="CreditCardName"> Credit Card Name</label>
           <input type="text" class="form-control" id="CreditCardName">
         </div>
 
-
+<br>
         <div class="form-group">
           <label for="DateIssued"> Date of Issue</label>
           <input type="text" class="form-control" id="DateIssued">
         </div>
 
-
+<br>
         <div class="form-group">
-          <label for="CardLimit">Card Type</label>
+          <label for="CardLimit">Card Limit</label>
           <select class="form-control" id="CardLimit">
-            <option *ngfor="let cl of CardType" [value]="ct">{{cl}}</option>
+            <option *ngfor="let cardlimit of CardType" [value]="cardlimit">{{CardLimit}}</option>
           </select>
         </div>
-
+<br>
         <button type="submit" class="btn btn-success">SUBMIT</button>
       </div>
     </form>
