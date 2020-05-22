@@ -2,12 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>AverageCreditAge</title>
+  <title>Average Credit Age</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-  <app-root></app-root>
+<body class="mat-typography">
+  <!-- <app-root></app-root> -->
+  <div class="container">
+
+    <div>
+      <h1>Average Credit Age</h1>
+      <form action="">
+        <div class="form-group">
+          <label for="name">Average Credit Age</label>
+          <input type="text" class="form-control" id="name">
+          
+  
+          <div class="form-group">
+            <label for="CardType">Card Type</label>
+            <select class="form-control" id="CardType">
+              <option *ngfor="let ct of CardType" [value]="ct">{{ct}}</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <label for="CreditCardName"> Credit Card Name</label>
+            <input type="text" class="form-control" id="CreditCardName">
+          </div>
+  
+  
+          <div class="form-group">
+            <label for="DateIssued"> Date of Issue</label>
+            <input type="text" class="form-control" id="DateIssued">
+          </div>
+  
+  
+          <div class="form-group">
+            <label for="CardLimit">Card Type</label>
+            <select class="form-control" id="CardLimit">
+              <option *ngfor="let cl of CardType" [value]="ct">{{cl}}</option>
+            </select>
+          </div>
+  
+          <button type="submit" class="btn btn-success">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
